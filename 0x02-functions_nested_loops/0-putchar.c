@@ -1,8 +1,20 @@
 #include <stdio.h>
 #include <main.h>
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-printf("\n _putchar \n");
-return (0);
-}
+	char *sh = "_putchar";
 
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
+}
