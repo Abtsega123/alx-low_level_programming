@@ -1,30 +1,26 @@
-*
- * File: 8-print_square.c
- * 
- */
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_square - Prints a squareusing the character #.
- * @size: The size of the square.
+ * print_square - Print square line dependent on the integer n.
+ * @n : The number of lines using '#' characters to use per row and column
+ * Return: Void.
  */
-void print_square(int size)
+void print_square(int n)
 {
-	int hgt, wid;
+	int x;
+	int y;
 
-	if (size > 0)
+	for (y = 0; y < n; y++)
 	{
-		for (hgt = 0; hgt < size; hgt++)
+		for (x = 0; x < n; x++)
 		{
-			for (wid = 0; wid < size; wid++)
-				_putchar('#');
-
-			if (hgt == size - 1)
-				continue;
-			_putchar('\n');
+			_putchar('#');
 		}
+		_putchar('\n');
 	}
-
-	_putchar('\n');
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
 }
