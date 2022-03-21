@@ -29,7 +29,7 @@ int main(void)
 	{
 		i--;
 	}
-
+	
 
 	for (j = 0; j <= i; j++)
 	{
